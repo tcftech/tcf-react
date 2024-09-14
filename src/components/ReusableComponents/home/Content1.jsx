@@ -68,12 +68,12 @@ export default function Content1() {
                           alignItems: 'center',
                           height: 'auto',
                           backgroundColor: 'white', // Background color for the container
-                          padding:"20%"
+                          // padding:"20%"
                           }}
                                         >
                                                
                                  <div >
-                                                            <h3 >Why Choose Us?</h3>
+                                                            <h3 className='Why-Choose-Us' >Why Choose Us?</h3>
                                                             <p >
                                                                 At TCF Technologies, we pride ourselves on providing an unparalleled learning experience
                                                             </p>

@@ -4,12 +4,16 @@ import ContactForm from '../ReusableComponents/ContactForm'
 import Test from '../ReusableComponents/test'
 import SwipeableTextMobileStepper from '../ReusableComponents/Carousel'
 import Content1 from '../ReusableComponents/home/Content1'
+import DarkVariantExample from '../ReusableComponents/home/CertificateReviews'
+import Content2 from '../ReusableComponents/home/Content2'
 
 export default function Home() {
   return (
     <>
        <SwipeableTextMobileStepper/>
        <Content1/>
+       <DarkVariantExample/>
+       <Content2/>
 
     </>
   )

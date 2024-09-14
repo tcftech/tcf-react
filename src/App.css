@@ -2,6 +2,13 @@
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
+
+:root{
+  --default-color: #ffffff;
+  --background-color: #3795BD;
+  --heading-color:purple;
+}
+
 section,
 .section {
   color: var(--default-color);
@@ -54,9 +61,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  --default-color: #ffffff;
-  --background-color: #3795BD;
-  --heading-color: #ffffff;
+ 
   width: 100%;
   min-height: 80vh;
   position: relative;
@@ -70,9 +75,9 @@ section,
 
 /* home section */
 .hero {
-  --default-color: #ffffff;
+  /* --default-color: #ffffff;
   --background-color: #3795BD;
-  --heading-color: #ffffff;
+  --heading-color: #ffffff; */
   width: 100%;
   min-height: 80vh;
   position: relative;
@@ -160,6 +165,31 @@ section,
 .home-features{
   display: flex;
 }
+.Why-Choose-Us{
+  color: var(--heading-color);
+}
+
+
+/* certificate content  */
+
+.certificate-Carousel{
+  display: flex;
+  background-color: rgba(226, 226, 226, 0.556);
+  padding: 5%;
+  border-radius:10px ;
+  /* height: 400px; */
+  align-items: center;
+  justify-content: center;
+}
+.carousel-parent-certificate{
+
+  /* background-color: #3795BD; */
+  padding: 10%;
+ 
+  
+
+}
+
 @media (max-width: 768px) {
   .container {
       flex-direction: column;
