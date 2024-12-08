@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import { HolidayVillage } from '@mui/icons-material';
 import Home from './components/pages/Home';
 import Test from './components/ReusableComponents/test';
+import SpeechToText from './SpeechRecognition';
 
 
 
@@ -18,13 +19,14 @@ function App() {
 
   return (
     <>
-      <Header/>
+      {/* <Header/>
       <Home/>
      
        
       <br />
       <br />
-      <Footer/>
+      <Footer/> */}
+      <SpeechToText/>
     </>
   )
 }
