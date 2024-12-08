@@ -1,0 +1,28 @@
+describe('Use Refresh Token to Get New Access Token', () => {
+  it('should get a new access token using the refresh token', function () {
+    const clientID = 'YOUR_CLIENT_ID';
+    const clientSecret = 'YOUR_CLIENT_SECRET';
+    const refreshToken = 'REPLACE_WITH_REFRESH_TOKEN'; // Store or retrieve the refresh token
+
+    // Send POST request to exchange the refresh token for a new access token
+    cy.request({
+      method: 'POST',
+      url: 'https://auth.example.com/oauth/token', // Replace with your token endpoint
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        grant_type: 'refresh_token',
+        refresh_token: refreshToken,
+        client_id: clientID,
+        client_secret: clientSecret,
+      }).toString(),
+    }).then((response) => {
+      expect(response.status).to.eq(200);
+      cy.log('New Access Token:', response.body.access_token);
+
+      // Optionally store the new token for further use
+      cy.wrap(response.body.access_token).as('newAccessToken');
+    });
+  });
+});
