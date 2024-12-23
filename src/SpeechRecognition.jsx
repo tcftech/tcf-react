@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './App.css'
 
 const SpeechToText = () => {
   const [text, setText] = useState("");
@@ -32,9 +33,17 @@ const SpeechToText = () => {
   return (
     <div>
       <h1>Speech to Text</h1>
-      <button onClick={startListening} disabled={isListening}>Start Listening</button>
+      <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"30px"}}>
+      <button class="speech-satrt" onClick={startListening} disabled={isListening}>Start Listening</button>
       <button onClick={stopListening} disabled={!isListening}>Stop Listening</button>
-      <p>{text}</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
+      <h1>{text}</h1>
+
+      </div>
     </div>
   );
 };

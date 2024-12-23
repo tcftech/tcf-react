@@ -18,6 +18,13 @@ section,
   overflow: clip;
 }
 
+.speech-satrt{
+  background-color: #3795BD;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -264,6 +271,10 @@ section,
  .content-2-section-row{
   display: flex;
   flex-direction: column-reverse;
+ }
+
+ .speech-satrt{
+  background-color: #3795BD;
  }
 
  
